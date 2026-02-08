@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Database
+database/
+*.db
+*.sqlite3
+
+# Data files (too large for GitHub)
+data/*.csv
+
+# Models (optional - include if <100MB)
+# models/*.pkl
+
+# Environment
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Power BI
+*.pbix

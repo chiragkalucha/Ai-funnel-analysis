@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # ============================================
+  # PostgreSQL Database
+  # ============================================
+  postgres:
+    image: postgres:16
+    container_name: funnel_postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: yonex.Chirag1
+      POSTGRES_DB: funnel_analysis
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./data:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - funnel_network
+
+  # ============================================
+  # FastAPI Application
+  # ============================================
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: funnel_api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres123@postgres:5432/funnel_analysis
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./models:/app/models:ro  # Read-only model files
+      - ./api:/app/api           # Hot reload for development
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - funnel_network
+    restart: unless-stopped
+
+# ============================================
+# Networks
+# ============================================
+networks:
+  funnel_network:
+    driver: bridge
+
+# ============================================
+# Volumes
+# ============================================
+volumes:
+  postgres_data:
+    driver: local
