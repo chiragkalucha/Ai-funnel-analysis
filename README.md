@@ -12,7 +12,7 @@
 
 [Features](#-key-features) • [Demo](#-demo) • [Installation](#-installation) • [Documentation](#-documentation) • [Contact](#-contact)
 
-![Project Banner](https://via.placeholder.com/800x400/2C3E50/FFFFFF?text=AI+Funnel+Analysis)
+![Project Banner](https://gemini.google.com/share/513f55b07b77)
 
 </div>
 
@@ -374,12 +374,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
+**CHIRAG KALUCHA**
 
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- 💼 LinkedIn: Chirag Klaucha (https://linkedin.com/in/chirag-kalucha)
 - 🐙 GitHub: [Your GitHub](https://github.com/yourusername)
-- 📧 Email: your.email@example.com
-- 🌐 Portfolio: [yourwebsite.com](https://yourwebsite.com)
+- 📧 Email: chiragkalucha15@gmail.com
 
 ---
 
