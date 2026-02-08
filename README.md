@@ -378,7 +378,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **CHIRAG KALUCHA**
 
 - 💼 LinkedIn: Chirag Klaucha (https://linkedin.com/in/chirag-kalucha)
-- 🐙 GitHub: [Your GitHub](https://github.com/yourusername)
+- 🐙 GitHub: chiragkalucha(https://github.com/chiragkalucha)
 - 📧 Email: chiragkalucha15@gmail.com
 
 ---
@@ -395,6 +395,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### ⭐ If you found this project helpful, please give it a star!
 
-Made with ❤️ and ☕ by [Your Name]
+Made with ❤️ and ☕ by Chirag Kalucha
 
 </div>
