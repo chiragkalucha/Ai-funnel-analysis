@@ -82,8 +82,7 @@ graph TD
 ## 📸 Demo
 
 ### API Documentation (Swagger UI)
-![API Demo](https://via.placeholder.com/700x400/34495E/FFFFFF?text=Interactive+API+Documentation)
-
+![API Demo](http://localhost:8000/docs)
 ### Prediction Response
 ```json
 {
@@ -96,7 +95,7 @@ graph TD
 ```
 
 ### Power BI Dashboard
-![Dashboard](https://via.placeholder.com/700x400/2C3E50/FFFFFF?text=Executive+Dashboard)
+![Dashboard](https://app.powerbi.com/groups/me/reports/435291a5-64a6-4851-8cf1-4b4c85019bb8/8d2e94072358fa49c29e?experience=power-bi)
 
 ---
 
